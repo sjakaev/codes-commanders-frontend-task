@@ -1,6 +1,19 @@
 # Simple Posts App
 
-This React + TypeScript application displays posts fetched via RTK Query. The home page shows eight posts in a grid with a Sign In button to navigate to the sign-in page.
+This React + TypeScript application displays posts fetched via RTK Query. The home page shows eight posts in a grid with the ability to sign in using a username from JSONPlaceholder.
+
+## Authentication
+
+Click **Sign In** on the home page to open the sign‑in form. Enter a username (for example `Bret`) and submit. If the user exists, the data will be stored in Redux and the button on the home page will change to **Log Out**.
+
+## Docker
+
+To build and run the application using Docker:
+
+```bash
+docker build -t posts-app .
+docker run -p 3000:80 posts-app
+```
 
 # Getting Started with Create React App
 
